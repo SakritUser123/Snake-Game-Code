@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!--Create  a datalist where users can pick from colors of balls,
+     and can choose their name in the ball game.-->
+
+
+</head>
+<style>
+
+    canvas {
+    border : 7px solid black;
+   
+   
+   
+   
+    }
+    .header{
+      font-weight:900;
+      font-size: xx-large;
+   
+   
+   
+   }
+   </style>
+<script src="SnakeGame.js"></script>
+<!-- <script src="canvas.js"></script> -->
+<div id="info"></div>
+<body onload="onLoad()">
+    
+    <div id="formfield">
+
+  
+    <form>
+        <label for="ball-color">Choose the color of your ball</br></label>
+        <input list="ballcolors" type="text" id="colorball"
+         required >
+              
+      
+
+        <datalist id="ballcolors"  required>
+            <option value="Red"></option>
+            <option value="Blue"></option>
+            <option value="Purple"></option>
+            <option value="Green"></option>
+        </datalist>
+  
+        <fieldset>
+            <label for="email">Email</br></label>
+            <input id="email" placeholder="Bob123@gmail.com"
+                title="Your email should start with a letter and have an @gmail.com,hotmail or any other email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required></br>
+            <input type="button" id="submit" value="click me" onclick="submitForm()" />
+            
+            
+    </form>
+</div>
+
+    <div id="canvas">
+        <div class="header">BAll GAME !!!!</div>
+        <canvas id="gameCanvas" width = "600px" height = "400px" 
+        style="border:2px solid black"></canvas>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
